@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta content="email=no" name="format-detection" />
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="js/html5shiv.min.js"></script>
+	<![endif]-->
+    <!--self-->
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        #big_ifr {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <!--self-->
+	<title>职业D图_职业详情</title>
+    
+</head>
+<body>
+
+<iframe src="./occupation.html" frameborder="0" id="big_ifr"></iframe>
+</body>
+<script>
+    $(function() {
+        var all_height=$(window).height();
+        var all_width=$(window).width();
+        $("#big_ifr").height(all_height).width(all_width);
+    })
+</script>
+</html>
